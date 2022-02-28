@@ -1,6 +1,6 @@
 package src.Lesson_2;
 
-public class Task_1 {
+public class Task_2 {
     public static void main(String[] args) {
         //Переменные для последних задач примитивный типы
         int a = 4;
@@ -64,7 +64,6 @@ public class Task_1 {
                 " но в одной строке. " +
                 "Слова должны быть разделены пробелом и не должны сливаться в одно.");
         noWordText(text);
-
 
     }
     // функция минимум двух чисел

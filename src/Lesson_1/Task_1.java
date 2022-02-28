@@ -1,6 +1,6 @@
 package src.Lesson_1;
 
-public class Task_0 {
+public class Task_1 {
     public static void main(String[] args) {
 
     System.out.println("Задание :Объявите переменные name1, name2, name3 типа String. " +
