@@ -1,5 +1,12 @@
 package src.Lesson_3;
 
+import java.awt.*;
+import java.io.*;
+import java.util.Scanner;
+
+import static java.lang.System.in;
+import static java.lang.System.out;
+
 public class Task_3 {
     public static void main(String[] args) {
         System.out.println("Задание: Вывести на экран дату своего рождения в виде: MAY 1 2012");
@@ -85,15 +92,129 @@ public class Task_3 {
                 "Подсказка: их 6 штук. Каждую комбинацию вывести с новой строки. Слова не разделять.");
         String [] te = {"Мама" , "Мыла", "Раму"};
 
-        System.out.println( te[0] + te[1] + te[2]  + "\n" +
+        System.out.println( te[0] + te[1] + te[2] + "\n" +
                             te[1] + te[0] + te[2] + "\n" +
                             te[1] + te[2] + te[0] + "\n" +
                             te[2] + te[1] + te[0] + "\n" +
                             te[0] + te[2] + te[1] + "\n" +
                             te[2] + te[0] + te[1]);
 
+        System.out.println("Задание: Выведи на экран таблицу умножения 10 на 10 в следующем виде:\n" +
+                "1 2 3 …\n" +
+                "2 4 6 …");
+
+        int l = 1;
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.print(i * j + " " + "\t");
+            }
+            System.out.print(" " + "\n");
+        }
+        System.out.println("Задание : Cемь цветов радуги\n" +
+                "\n" +
+                "Создать 7 объектов, чтобы на экран вывелись 7 цветов радуги (ROYGBIV).\n" +
+                "Каждый объект при создании выводит на экран определенный цвет.");
+        /*
+        Red (красный)
+        Orange (оранжевый)
+        Yellow (жёлтый)
+        Green (зелёный)
+        Blue (синий)
+        Indigo (фиолетовый)
+        Violet (пурпурный)
+        */
+            Coloris red = new Coloris();
+            Coloris orange = new Coloris();
+            Coloris yellow = new Coloris();
+            Coloris green = new Coloris();
+            Coloris blue = new Coloris();
+            Coloris indigo = new Coloris();
+            Coloris violet = new Coloris();
+            red.setColorName("Red");
+            orange.setColorName("Orange");
+            yellow.setColorName("Yellow");
+            green.setColorName("Green");
+            blue.setColorName("Blue");
+            indigo.setColorName("Indigo");
+            violet.setColorName("Violet");
+
+            System.out.println("цвет" + red.getColorName());
+            System.out.println("цвет" + orange.getColorName());
+            System.out.println("цвет" + yellow.getColorName());
+            System.out.println("цвет" + green.getColorName());
+            System.out.println("цвет" + blue.getColorName());
+            System.out.println("цвет" + indigo.getColorName());
+            System.out.println("цвет" + violet.getColorName());
+
+            System.out.println("Задание: Про экранирование символов в Java читайте в дополнительном материале к лекции." +
+                    " Вывести на экран следующий текст - две строки:\n" +
+                    "It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"\n" +
+                    "It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"");
+            System.out.println("Задание: Изучаем японский\n" +
+                    "\n" +
+                    "Выведи на экран 日本語");
+             System.out.println("日本語");
+             System.out.println(" Задание : Как захватить мир\n" +
+                     "\n" +
+                     "Ввести с клавиатуры число и имя, вывести на экран строку:\n" +
+                     "«имя» захватит мир через «число» лет. Му-ха-ха!\n" +
+                     "( Последовательность вводимых данных имеет большое значение.)");
+            Scanner sr = new Scanner(in);
+            System.out.print("Введите число: ");
+            int number = sr.nextInt();
+            System.out.print("Введите имя: ");
+            String name = sr.next();
+            System.out.println("«" + name +"»" + " захватит мир через " + "«" + number + "»" + " лет. Му-ха-ха!" );
+
+            System.out.println("Задание: Зарплата через 5 лет\n" +
+                    "\n" +
+                    "Ввести с клавиатуры отдельно Имя, число1, число2." +
+                    " Вывести надпись: «Имя» получает «число1» через «число2» лет.");
+             System.out.print("Введите имя:");
+             String name1 = sr.next();
+             System.out.print("Ведите число 1: ");
+             int num1 = sr.nextInt();
+             System.out.print("Ведите число 2: ");
+             int num2 = sr.nextInt();
+             System.out.println(name1 + " получает " + num1 + " через " + num2 + " лет.");
+
+             System.out.println("Задание: Ввести с клавиатуры имя и вывести надпись: name зарабатывает $5,000. Ха-ха-ха!");
+             System.out.print("Введите имя:");
+             String name2 = sr.next();
+             System.out.println(name2 + " зарабатывает $5,000. Ха-ха-ха!");
+
+             System.out.println("Задание: Ввести с клавиатуры два имени и вывести надпись:\n" +
+                     "name1 проспонсировал name2, и она стала известной певицей.\n");
+
+            System.out.print("Введите имя 1 :");
+            String name3 = sr.next();
+            System.out.print("Введите имя 2 :");
+            String name4 = sr.next();
+            System.out.println(name3 + " пронспорсировал " + ", и она стала известной певицей");
+
+            System.out.println("Задание : Ввести с клавиатуры три имени, вывести на экран надпись name1 + name2 + name3 = Чистая любовь, да-да!");
+        System.out.print("Введите имя 1:");
+        String name01 = sr.next();
+        System.out.print("Введите имя 2:");
+        String name02 = sr.next();
+        System.out.print("Введите имя 3:");
+        String name03 = sr.next();
+        System.out.println(name01 + " + " + name02 + " + " + name03 + " = " + "Чистая любовь, да-да!" );
+
+        System.out.println("Задание: Вывести на экран надпись «Жить хорошо, а хорошо жить еще лучше»");
+        System.out.println("Жить хорошо, а хорошо жить еще лучше");
+
+        System.out.println("Задание :Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»");
+        System.out.println("Я не хочу изучать Java, я хочу большую зарплату");
+
+        System.out.println("Задание: Ввести с клавиатуры число n. Вывести на экран надпись «Я буду зарабатывать $n в час».");
+        System.out.print("Ведите число n: ");
+        int n = sr.nextInt();
+        System.out.println("Я буду зарабатывать " + "$" + n + " в час");
+        sr.close();
 
 
 
     }
+
 }

@@ -108,6 +108,7 @@ public class Task_2 {
         System.out.println(text + " " + text + " " + text);
     }
 
+
 }
 
 
