@@ -6,4 +6,4 @@
 
 ## Дополнительные задания выполненые (ylab_viktor.additional_task)
 
-*
+* Fibonacci - с помощь цикла
