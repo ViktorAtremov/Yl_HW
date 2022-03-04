@@ -1,5 +1,8 @@
 package src.ylab_viktor.additional_task;
 
+import java.util.Scanner;
+
+
 public class Fibonacci {
     public static void main(String[] args) {
           int fib1 = 1;
