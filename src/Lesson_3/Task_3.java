@@ -193,25 +193,25 @@ public class Task_3 {
             System.out.println(name3 + " пронспорсировал " + ", и она стала известной певицей");
 
             System.out.println("Задание : Ввести с клавиатуры три имени, вывести на экран надпись name1 + name2 + name3 = Чистая любовь, да-да!");
-        System.out.print("Введите имя 1:");
-        String name01 = sr.next();
-        System.out.print("Введите имя 2:");
-        String name02 = sr.next();
-        System.out.print("Введите имя 3:");
-        String name03 = sr.next();
-        System.out.println(name01 + " + " + name02 + " + " + name03 + " = " + "Чистая любовь, да-да!" );
+            System.out.print("Введите имя 1:");
+            String name01 = sr.next();
+            System.out.print("Введите имя 2:");
+            String name02 = sr.next();
+            System.out.print("Введите имя 3:");
+            String name03 = sr.next();
+            System.out.println(name01 + " + " + name02 + " + " + name03 + " = " + "Чистая любовь, да-да!" );
 
-        System.out.println("Задание: Вывести на экран надпись «Жить хорошо, а хорошо жить еще лучше»");
-        System.out.println("Жить хорошо, а хорошо жить еще лучше");
+            System.out.println("Задание: Вывести на экран надпись «Жить хорошо, а хорошо жить еще лучше»");
+            System.out.println("Жить хорошо, а хорошо жить еще лучше");
 
-        System.out.println("Задание :Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»");
-        System.out.println("Я не хочу изучать Java, я хочу большую зарплату");
+            System.out.println("Задание :Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»");
+            System.out.println("Я не хочу изучать Java, я хочу большую зарплату");
 
-        System.out.println("Задание: Ввести с клавиатуры число n. Вывести на экран надпись «Я буду зарабатывать $n в час».");
-        System.out.print("Ведите число n: ");
-        int n = sr.nextInt();
-        System.out.println("Я буду зарабатывать " + "$" + n + " в час");
-        sr.close();
+            System.out.println("Задание: Ввести с клавиатуры число n. Вывести на экран надпись «Я буду зарабатывать $n в час».");
+            System.out.print("Ведите число n: ");
+            int n = sr.nextInt();
+            System.out.println("Я буду зарабатывать " + "$" + n + " в час");
+            sr.close();
 
 
 
