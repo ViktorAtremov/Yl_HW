@@ -92,6 +92,58 @@ public class Task_4 {
         System.out.println("Введите свое возраст");
         int syers = sr.nextInt();
         if (syers > 20) System.out.println(name1 + ". И 18-ти достаточно");
-        // System    }
+
+
+        System.out.println("Задание:Вывести на экран числа от 1 до 10, используя цикл while. ");
+        int az = 0;
+        while (az <= 9)
+        {
+            az++;
+            System.out.println(az);
+        }
+        System.out.println("Задание: Вывести на экран числа от 10 до 1, используя цикл while. ");
+        int a11 = 11;
+        while (a11 > 1)
+        {
+            a11--;
+            System.out.println(a11);
+        }
+        System.out.println("Задание: Ввести с клавиатуры строку и число N.\n" +
+                "Вывести на экран строку N раз, используя цикл while. ");
+        System.out.println("Введите строку, которую хотите повторить N раз");
+        String str = sr.next();
+        System.out.println("Введите N-число: ");
+        int N = sr.nextInt();
+        int nell = 0;
+        while (nell <= N) {
+            nell++;
+            System.out.println(str);
+        }
+
+        System.out.println("Задание: Вывести на экран квадрат из 10х10 букв S используя цикл while.\n" +
+                "Буквы в каждой строке не разделять.");
+        int soll = 0;
+
+        while  (soll <= 9) {
+            soll++;
+          System.out.println("SSSSSSSS");
+        }
+        System.out.println("Задание: Вывести на экран таблицу умножения 10х10 используя цикл while.\n" +
+                "Числа разделить пробелом.\n");
+        int i=1,n=1;
+        while(i<=10)
+        {
+            System.out.print(i+" ");
+            while(n<=9)
+            {
+                n++;
+                System.out.print("\t"+ i*n + " ");
+            }
+            i++;
+            n=1;
+            System.out.println("\t");
+        }
+
+
     }
 }
