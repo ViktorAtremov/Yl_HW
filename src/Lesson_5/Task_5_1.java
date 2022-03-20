@@ -2,6 +2,7 @@ package src.Lesson_5;
 
 public class Task_5_1 {
     public static void main(String[] args) {
+        /*
         //Задачи на создание своих классов и объектов
         System.out.println("Задача: Создать класс Cat. У кота должно быть имя (name, String), возраст (age, int)," +
                 " вес (weight, int), сила (strength, int).");
@@ -51,5 +52,8 @@ public class Task_5_1 {
         System.out.println(cat.fight(cat2));
         System.out.println(cat1.fight(cat2));
         System.out.println(cat2.fight(cat1));
+    }
+
+         */
     }
 }
